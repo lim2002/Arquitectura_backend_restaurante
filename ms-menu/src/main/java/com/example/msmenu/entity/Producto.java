@@ -9,7 +9,7 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "Producto.findAll", query = "SELECT p FROM Producto p"),
         @NamedQuery(name = "Producto.findById", query = "SELECT p FROM Producto p WHERE p.idProducto = :idProducto"),
-        @NamedQuery(name = "Producto.findByProducto", query = "SELECT p FROM Producto p WHERE p.producto = :producto")
+        @NamedQuery(name = "Producto.findByProducto", query = "SELECT p FROM Producto p WHERE p.productoNombre = :producto")
 })
 public class Producto implements Serializable {
     private static final long serialVersionUID = 1L;
