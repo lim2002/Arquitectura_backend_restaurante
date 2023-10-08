@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ms-menu
+server:
+  port: 8809
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8710/eureka/
